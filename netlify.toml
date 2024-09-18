@@ -3,12 +3,7 @@
   command = "npm run build"
 
 [[headers]]
-  for = "/source-images/*"
+  for = "/.netlify/images/*"
   [headers.values]
     Cache-Control = "public, max-age=604800, must-revalidate"
-
-[[headers]]
-  for = "public/images/*"
-  [headers.values]
-    Cache-Control = "public, max-age=4300, must-revalidate"
 
